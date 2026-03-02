@@ -17,5 +17,9 @@ app.use("/api/students", require("./routes/studentRoutes"));
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
 
+app.get("/", (req, res) => {
+  res.send("MERN Backend Running 🚀");
+});  
+
 
 });
