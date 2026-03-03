@@ -19,6 +19,8 @@ app.listen(process.env.PORT, () => {
 
 app.get("/", (req, res) => {
   res.send("MERN Backend Running 🚀");
+
+  console.log("ENV CHECK:", process.env.MONGO_URI);
 });  
 
 
