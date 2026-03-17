@@ -4,6 +4,7 @@ import API from "../api";
 import "./Student.css";
 
 function StudentList() {
+  const name = 
   const [students, setStudents] = useState([]);
   const [form, setForm] = useState({
     name: "",
@@ -20,6 +21,7 @@ function StudentList() {
     try {
       const res = await API.get("/students");
       setStudents(res.data);
+
     } catch (error) {
       console.error("Error fetching students:", error);
     }
