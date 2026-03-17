@@ -4,7 +4,7 @@ import API from "../api";
 import "./Student.css";
 
 function StudentList() {
-  const name =
+  const data = "Manya";
   const [students, setStudents] = useState([]);
   const [form, setForm] = useState({
     name: "",
